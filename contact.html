@@ -1,0 +1,100 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- For our CSS stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <div class="main-header">
+                <!-- Main Navigation -->
+                <nav class="main-menu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="adopt-pets.html">Adoptable Pets</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!-- Main Content -->
+        <main>
+            <img src="images/german_shepherd_playiing.jpeg" alt="Local Pet Adoption - German Shepherd Playing"
+                width="350">
+            <p>If you have any question about a specific pet or our adoption policies, or to even make inquiries, please
+                contact us directly using the form below:</p>
+            <form action="/contact" method="post">
+                <fieldset>
+                    <legend style="font-weight: bold;">Contact Information</legend>
+                    <label>First Name*</label><br>
+                    <input type="text" name="first_name" placeholder="First Name"><br>
+                    <label>Last Name*</label><br>
+                    <input type="text" name="last_name" placeholder="Last Name"><br>
+                    <label>Email*</label><br>
+                    <input type="email" name="email" placeholder="Email"><br>
+                    <label for="message_title">What is your message regarding?</label><br>
+                    <select id="message_title" name="message_title">
+                        <option disabled selected>Please select an option</option>
+                        <option value="pet_listings">Pet Listings</option>
+                        <option value="rehome">Rehome, lost or found pets</option>
+                        <option value="concerns">Concerns regarding rescued pets</option>
+                        <option value="other">All other requests</option>
+                    </select><br>
+
+                    <div id="input_container">
+                        <div id="pet_listings_input" class="hidden">
+                            <label for="pet_listings_info">Enter the information you are requesting on pet
+                                listings:</label><br>
+                            <textarea cols="40" rows="5" id="pet_listings_info" name="pet_listings_info"></textarea><br>
+                        </div>
+
+                        <div id="rehome_input" class="hidden">
+                            <label for="rehome_info">Enter your request regarding rehome/lost/found pets:</label><br>
+                            <textarea cols="40" rows="5" id="rehome_info" name="rehome_info"></textarea><br>
+                        </div>
+
+                        <div id="concerns_input" class="hidden">
+                            <label for="concerns_info">Enter concerns regarding rescued pets:</label><br>
+                            <textarea cols="40" rows="5" id="concerns_info" name="concerns_info"></textarea><br>
+                        </div>
+
+                        <div id="other_input" class="hidden">
+                            <label for="other_info">Enter other requests:</label><br>
+                            <textarea cols="40" rows="5" id="other_info" name="other_info"></textarea><br>
+                        </div>
+                    </div>
+                    <input type="submit" value="Send"><br>
+                </fieldset>
+            </form>
+        </main>
+        <!-- Footer -->
+        <footer>
+            <!-- Non-disclaimer footer -->
+            <div id="nondisclaimer">
+                <div class="copy">&copy; 2023 Adoptable Pets</div>
+                <div class="social">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                </div>
+            </div>
+            <!-- Disclaimer footer -->
+            <div id="disclaimer">
+                <p>This website is designed and created solely for educational purposes only at Westcliff
+                    University.
+                    All contents are not intended for any commercial gain or use.</p>
+            </div>
+        </footer>
+    </div>
+    <!-- JavaScript Codes -->
+    <script src="script.js"></script>
+</body>
+
+</html>

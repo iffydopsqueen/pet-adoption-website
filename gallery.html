@@ -1,0 +1,222 @@
+<html>
+
+<head>
+    <title>Gallery</title>
+    <meta charset="UTF-8">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- For our CSS stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- jQuery Library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <div class="main-header">
+                <!-- Main Navigation -->
+                <nav class="main-menu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="adopt-pets.html">Adoptable Pets</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!-- Main Content -->
+        <main>
+            <div class="main-container">
+                <p>Are you in search of a new best friend? Your quest ends here. Whether your heart longs for the
+                    playful patter of puppy paws, the soft purr of a kitten, the wagging tail of a dog, or the
+                    comforting presence of a cat, our Pet Adoption Gallery is brimming with marvelous pets eagerly
+                    waiting to find their forever homes.</p>
+                <p>If a particular furry face catches your eye and tugs at your heart, we kindly invite you to complete
+                    a pre-adoption application. This simple step marks the beginning of our adoption process, designed
+                    to ensure the perfect match. We believe in the importance of aligning lifestyles and preferences,
+                    ensuring a seamless integration of your new best friend into your life. After all, it's about
+                    finding that special someone who fits just right.</p>
+                <p>Once we review your application and determine a potential match, we'll gladly arrange a meeting for
+                    you and your prospective furry companion. There's nothing quite like that first, magical encounter
+                    when you know you've found your perfect match.</p>
+                <p>Curious about the complete adoption process? Reach out to us here</p>
+            </div>
+            <!-- Container for the image gallery -->
+            <div class="image-container">
+                <!-- List to hold photos -->
+                <ul class="photo-list">
+                    <!-- Each photo is represented as a list item -->
+                    <li class="photo">
+                        <a href="#/" class="lightbox-toggle">
+                            <img src="images/gallery/beagles-laying-in-the-shade.jpeg" alt="Beagle">
+                        </a>
+                        <div class="caption">Beagle</div>
+                        <div class="description"
+                            onclick="openInfoBox('Beagle', 'A small to medium-sized hound dog known for its keen sense of smell and distinctive howl, the Beagle is friendly, curious, and great with families.')">
+                            A beagle laying in the shade of a tree</div>
+                    </li>
+
+                    <li class="photo">
+                        <a href="#/" class="lightbox-toggle">
+                            <img src="images/gallery/bulldog-inglese.jpeg" alt="Bulldog">
+                        </a>
+                        <div class="caption">Bulldog</div>
+                        <div class="description"
+                            onclick="openInfoBox('Bulldog', 'Recognizable by its loose, wrinkled skin and distinctive pushed-in nose, the Bulldog is a gentle and affectionate companion, characterized by its sturdy and muscular build.')">
+                            An English bulldog</div>
+                    </li>
+
+                    <li class="photo">
+                        <a href="#/" class="lightbox-toggle">
+                            <img src="images/gallery/chihuahua-breed.jpeg" alt="Chihuahua">
+                        </a>
+                        <div class="caption">Chihuahua</div>
+                        <div class="description"
+                            onclick="openInfoBox('Chihuahua', 'The Chihuahua is a tiny dog with a big personality. Known for its loyalty and strong bond with its owner, this breed is often fearless and alert.')">
+                            Sad looking chihuahua</div>
+                    </li>
+
+                    <li class="photo">
+                        <a href="#/" class="lightbox-toggle">
+                            <img src="images/gallery/clapton-the-poodle.jpeg" alt="Poodle">
+                        </a>
+                        <div class="caption">Poodle</div>
+                        <div class="description"
+                            onclick="openInfoBox('Poodle', 'An intelligent and versatile breed, the Poodle is known for its curly, hypoallergenic coat and comes in standard, miniature, and toy sizes. They are highly trainable and excel in various dog sports.')">
+                            Clapton the poodle in the water</div>
+                    </li>
+
+                    <li class="photo">
+                        <a href="#/" class="lightbox-toggle">
+                            <img src="images/gallery/dachshund-dog-breed.jpg" alt="Dachshund">
+                        </a>
+                        <div class="caption">Dachshund</div>
+                        <div class="description"
+                            onclick="openInfoBox('Dachshund', 'A small, long-bodied dog with short legs, the Dachshund is a playful and curious breed. They are known for their unique shape and brave, spunky personality.')">
+                            A long-bodied dachshund dog standing in a field</div>
+                    </li>
+
+                    <li class="photo">
+                        <a href="#/" class="lightbox-toggle">
+                            <img src="images/gallery/diana-the-poodle.jpeg" alt="Poodle">
+                        </a>
+                        <div class="caption">Poodle</div>
+                        <div class="description"
+                            onclick="openInfoBox('Poodle', 'An intelligent and versatile breed, the Poodle is known for its curly, hypoallergenic coat and comes in standard, miniature, and toy sizes. They are highly trainable and excel in various dog sports.')">
+                            Diana the poodle standing on a
+                            beach</div>
+                    </li>
+
+                    <li class="photo">
+                        <a href="#/" class="lightbox-toggle">
+                            <img src="images/gallery/german-shepherd-breed.jpg" alt="German Shepherd">
+                        </a>
+                        <div class="caption">German Shepherd</div>
+                        <div class="description"
+                            onclick="openInfoBox('German Shepherd', 'A highly intelligent and versatile breed, the German Shepherd is known for its loyalty, trainability, and protective instincts. They are often used as working dogs in roles like police and search and rescue.')">
+                            A German shepherd dog standing
+                            in the grass</div>
+                    </li>
+
+                    <li class="photo">
+                        <a href="#/" class="lightbox-toggle">
+                            <img src="images/gallery/golden-retriever-breed.jpeg" alt="Golden Retriever">
+                        </a>
+                        <div class="caption">Golden Retriever</div>
+                        <div class="description"
+                            onclick="openInfoBox('Golden Retriever', 'Friendly, intelligent, and gentle, the Golden Retriever is a popular family dog and is known for its beautiful golden coat. They are eager to please and excel in various activities, including obedience and therapy work.')">
+                            A golden retriever sitting in a
+                            park</div>
+                    </li>
+
+                    <li class="photo">
+                        <a href="#/" class="lightbox-toggle">
+                            <img src="images/gallery/labrador-retriever-breed.jpeg" alt="Labrador Retriever">
+                        </a>
+                        <div class=" caption">Labrador Retriever</div>
+                        <div class="description"
+                            onclick="openInfoBox('Labrador Retriever', 'An affectionate and outgoing breed, the Labrador Retriever is known for its friendly nature and intelligence. They are often used as guide dogs, search and rescue dogs, and family pets.')">
+                            A Labrador retriever dog
+                            standing close to a river</div>
+                    </li>
+
+                    <li class="photo">
+                        <a href="#/" class="lightbox-toggle">
+                            <img src="images/gallery/rottweiler-breed.jpg" alt="Rottweiler">
+                        </a>
+                        <div class="caption">Rottweiler</div>
+                        <div class="description"
+                            onclick="openInfoBox('Rottweiler', 'A powerful and confident breed, the Rottweiler is known for its strength, loyalty, and protective nature. They are often used as working dogs in roles like police and guard dogs.')">
+                            A happy Rottweiler standing in
+                            the field</div>
+                    </li>
+
+                    <li class="photo">
+                        <a href="#/" class="lightbox-toggle">
+                            <img src="images/gallery/siberian-husky-breed.jpg" alt="Siberian Husky">
+                        </a>
+                        <div class="caption">Siberian Husky</div>
+                        <div class="description"
+                            onclick="openInfoBox('Siberian Husky', 'Recognizable by its striking appearance and thick double coat, the Siberian Husky is energetic, independent, and known for its friendly demeanor. They are excellent sled dogs and require regular exercise.')">
+                            A Siberian husky standing on a
+                            rock</div>
+                    </li>
+
+                    <li class="photo">
+                        <a href="#/" class="lightbox-toggle">
+                            <img src="images/gallery/yorkshire-terrier-on-deck.jpeg" alt="Yorkshire Terrier">
+                        </a>
+                        <div class="caption">Yorkshire Terrier</div>
+                        <div class="description"
+                            onclick="openInfoBox('Yorkshire Terrier', 'A small and elegant toy breed, the Yorkshire Terrier is known for its long, silky coat and confident personality. Despite their size, they are spirited and brave, making them great companions.')">
+                            A Yorkshire terrier laying on a
+                            boat deck</div>
+                    </li>
+                </ul>
+
+                <!-- Lightbox -->
+                <div class="backdrop"></div>
+
+                <div class="box">
+                    <div class="close">x</div>
+                </div>
+
+                <!-- Information box-->
+                <div id="info-box">
+                    <div id="info-heading"></div>
+                    <div id="info-text"></div>
+                    <a href="#" id="close-info" onclick="closeInfoBox()">Click This To Close</a>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <!-- Non-disclaimer footer -->
+            <div id="nondisclaimer">
+                <div class="copy">&copy; 2023 Adoptable Pets</div>
+                <div class="social">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                </div>
+            </div>
+            <!-- Disclaimer footer -->
+            <div id="disclaimer">
+                <p>This website is designed and created solely for educational purposes only at Westcliff
+                    University.
+                    All contents are not intended for any commercial gain or use.</p>
+            </div>
+        </footer>
+    </div> <!-- End Container -->
+
+    <!-- JavaScript Codes -->
+    <script src="script.js"></script>
+</body>
+
+</html>
